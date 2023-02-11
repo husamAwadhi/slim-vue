@@ -30,7 +30,7 @@
         "slim/psr7": "^1.6",
         "slim/slim": "^4.11",
         "symfony/cache": "^6.2",
-        "doctrine/dbal": "^3.5",
+        "doctrine/dbal": "^3.6",
         "doctrine/orm": "^2.14",
         "tuupola/slim-jwt-auth": "^3.7",
         "vlucas/phpdotenv": "^5.5"
