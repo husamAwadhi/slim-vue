@@ -1,0 +1,23 @@
+#!/usr/bin/env php
+<?php
+
+use Doctrine\Common\DataFixtures\Executor\ORMExecutor;
+use Doctrine\Common\DataFixtures\Loader;
+use Doctrine\Common\DataFixtures\Purger\ORMPurger;
+use Doctrine\ORM\EntityManager;
+
+require dirname(__DIR__) . '/app/bootstrap.php';
+
+$app = getApp();
+$c = $app->getContainer();
+
+//loader
+$loader = new Loader();
+$loader->loadFromDirectory(dirname(__DIR__) . '/src/Fixtures');
+
+// executor
+$executor = new ORMExecutor(
+    $c->get(EntityManager::class),
+    new ORMPurger()
+);
+$executor->execute(array_reverse($loader->getFixtures()));
