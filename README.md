@@ -1,5 +1,5 @@
 # slim-vue
-Application Skeleton for a backend running Slim PHP and frontend running Vue
+Application Skeleton for a backend running Slim PHP and frontend running Vue with out of the box JWT authentication
 
 ## Tech
 backend running on [Slim Framework 4](api/README.md) and [Vue 3 in Vite](frontend/README.md) using [PostgreQL 14](https://www.postgresql.org/about/news/postgresql-14-released-2318/) Database and [Nginx](https://docs.nginx.com/) Web server. 
