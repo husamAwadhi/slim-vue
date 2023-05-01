@@ -38,7 +38,7 @@
     "require-dev": {
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
         "doctrine/data-fixtures": "^1.6",
-        "friendsofphp/php-cs-fixer": "^3.14",
+        "friendsofphp/php-cs-fixer": "^3.16",
         "jangregor/phpstan-prophecy": "^1.0.0",
         "phpspec/prophecy-phpunit": "^2.0",
         "phpstan/extension-installer": "^1.2.0",
